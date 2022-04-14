@@ -9,5 +9,32 @@
 
 :root {
     --white-color:#fff;
+    --gradient-dark:#1d3548;
+    --gradient-light:#2196f3;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .cards {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(var(--gradient-light), var(--gradient-light) 30%, var(--gradient-dark) 30%, var(--gradient-dark) );
+    margin: 10px;
+    border-radius: 20px;
 }
 
